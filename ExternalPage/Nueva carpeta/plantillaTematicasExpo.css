@@ -1,0 +1,26 @@
+#cabecera{
+    background-color: rgb(102, 102, 102);
+    opacity: 50;
+}
+#leyendaCabecera{
+    margin-left: 5%;
+    display:inline-block;
+}
+#boton{
+    float:right;
+    margin-top: 6%;
+    margin-right: 5%;
+    background-color: transparent;
+    border:none;
+    width:10%;
+
+    
+}
+#titulo{
+    margin-top: 35%;
+    text-align: center;
+}
+#descripcion{
+    margin-top: 50%;
+    
+}
