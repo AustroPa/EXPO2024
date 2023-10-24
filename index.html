@@ -5,21 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expo Modelo 2024</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">        
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+    
+
 </head>
 
 <header>
     <nav>
-        <center>
         <h1 id="titulo">EXPO MODELO 2024</h1>
-        </center>
-        <hr>
     </nav>
 
 </header>
 <body>
-    <div id="texto">
-    <img src="images/libro.jpeg" alt="" class="logo"> 
+    <div >
+    <img src="images/SinFondoLogo.png" class="logo"> 
+    <h1 id="titulo1">TEMATICAS</h1> 
     </div>
+    
+
     <a href="ExternalPage/Nueva carpeta/plantillaTematicasExpo.html">aaaaaaaaa</a>
 
 </body>
@@ -28,25 +37,38 @@
 
 .logo{   
     width: 150px;
-    transform: translate(-50%, -50%);
-    margin-left: 75px;
-    margin-top:  75px;
-
+    display: flex;
+    justify-content: center;
+    
 }
 
-#texto{
-    background-color: grey;
+
+
+hr{
+    height: 3px;
+    background-color :black;
     opacity: 0.1;
 }
 
-hr{
-        height: 3px;
-        background-color :black;
-        opacity: 0.1;
+#titulo{
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
 }
 
-h1{
-
+#titulo1{
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    z-index: 3;
+    width: 50%;
+    text-align: center;
 }
 
 </style>
