@@ -4,8 +4,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { ExternalPageComponent } from './external-page/external-page.component';
 
 const routes: Routes = [
-  {path: 'MainPage', component: MainPageComponent},
-  {path: 'ExternalPage', component: ExternalPageComponent},
+  {path: 'mainPage', component: MainPageComponent},
+  {path: 'externalPage', component: ExternalPageComponent},
 ];
 
 @NgModule({
