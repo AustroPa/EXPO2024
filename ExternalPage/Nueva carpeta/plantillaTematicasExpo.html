@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <title>Plantilla aula</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
@@ -10,10 +11,11 @@
         
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
-    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+        
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -53,11 +55,15 @@
 
         
 
-        <p id="descripcion">descripcion de lo que scripcion de lo que sea que haya en el aula descripcion de lo que sea que haya en el auladescripcion de lo que sea que haya en el aula descripcion de lo que sea que haya en el aula descripcion de lo que sea que haya en el aula descripcion</p>
+        <p id="descripcion">En el aula de física podemos encontrar numerosos proyectos que utilizan las leyes del mundo que nos rodea. Algunos proyectos pueden ser un pendulo de imanes que demustra la aplicacion de los campos magneticos, o un ventilador alimentado por energia renovable.</p>
         
-        <div id="ustedEstaAqui">
-            <img src="Captura desde 2023-10-10 16-18-27.png">
+        <div class="img-wrapper">
+            <img id="ustedEstaAqui" src="Captura desde 2023-10-10 16-18-27.png">
+            <div id="img-zoom" class="img-zoom-result"></div>
         </div>
+        <script>
+            imageZoom("ustedEstaAqui", "img-zoom");
+        </script>
 
         <div id="listaCursos">
             <h2>Cursos Involucrados</h2>
