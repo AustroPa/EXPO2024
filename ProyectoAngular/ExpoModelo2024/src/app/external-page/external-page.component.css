@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0%;
     width: 100%;
@@ -5,35 +7,39 @@ body{
 }
 
 
-#cabecera{
-    background-color: rgb(100, 100, 100);
-    opacity: 90%;
+header{
+    position:fixed;
+    /*background-color: rgb(73, 73, 73); ESTE ES GRIS*/
+    background-color: #000a23dc;
+    opacity: 100%;
     width: 100%;
-    position: absolute;
+    height: 8%;
     z-index: 10;
     top: 0;
+    display: flex;
+    align-items: center;
 }
 #leyendaCabecera{
-    margin-left: 5%;
-    margin-top: 3%;
+    padding-top: 2%;
+    margin-left: 60%; /* 4% SI VA A LA IZQ, 60% SI VA A LA DER*/
     display:inline-block;
     font-family: 'Montserrat', sans-serif;  
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: rgb(226, 226, 226);
     font-size: larger;
     letter-spacing: 1px;
 }
 #boton{
-    float:right;
-    margin-top: 3%;
-    margin-right: 5%;
+    position: absolute;
+    float: right;
+    padding-left: 4%; /* 4% SI VA A LA IZQ, 4% SI VA A LA DER*/
     background-color: transparent;
     border:none;
-    width:10%;
 }
 a{
-    color: black !important;
+    color: rgb(172, 172, 172) !important;
 }
+
 
 
 #carouselExampleSlidesOnly{
@@ -65,7 +71,9 @@ a{
     margin-top: 17.5%;
     font-style: italic;
     font-family: "Roboto Slab",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    padding: 5%;
+    padding: 3%;
+    color: rgb(70, 70, 70);
+    text-align: center;
 }
 
 
@@ -97,4 +105,32 @@ a{
 #listaCursos{
     padding: 5%;
     margin-top: 20%;
+    color: rgb(70, 70, 70);
 }
+
+
+
+footer{
+    background-color: #000a23;
+    margin: 0%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    padding: 9%;
+}
+#textoFooter{
+    color: rgb(226, 226, 226);
+    text-align: center;
+    margin-bottom: 0%;
+}
+#botonesRedesSociales{
+    background-color: transparent;
+    border:none;
+    padding-top: 5%;
+}
+
+
+
+
+
