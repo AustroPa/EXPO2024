@@ -1,3 +1,4 @@
+console.log("aa");
 function imageZoom(imgID, resultID){
     var img, lens, result, cx, cy;
     img = document.getElementById("DIV");
