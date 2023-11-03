@@ -39,7 +39,7 @@
                 <h2>Aula X</h2>
             </div>
 
-            <!--
+            <!-- CARRUSEL DE BOOTSTRAP
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div id="degrade"></div>
                 <div class="carousel-inner">
@@ -55,16 +55,15 @@
                 </div>
                 
             </div>
-        -->
-        <div id="degrade"></div>
-        <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
-	    <ng-template ngbSlide *ngFor="let image of images">
-		<div class="picsum-img-wrapper">
-		<img [src]="image" alt="Random slide" />
-		</div>
-	    </ng-template>
-        </ngb-carousel>
-
+            -->
+            <div id="degrade"></div>
+            <div id="carrusel">
+                <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+                    <ng-template ngbSlide *ngFor="let image of images">
+                        <img [src]="image" style="width:100%; height:100%"/>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
         </div>
           
         <p id="descripcion">En el aula de física podemos encontrar numerosos proyectos que utilizan las leyes del mundo que nos rodea. Algunos proyectos pueden ser un pendulo de imanes que demustra la aplicacion de los campos magneticos, o un ventilador alimentado por energia renovable.</p>
@@ -77,9 +76,9 @@
             imageZoom("ustedEstaAqui", "img-zoom");
         </script>
 
-        <div id="listaCursos">
+        <div id="contenedorLista">
             <h2>Cursos Involucrados</h2>
-            <ul>
+            <ul id="listaCursos">
                 <li>primero cst c A</li>
                 <li>primero cst c B</li>
                 <li>primero cst m A</li>
@@ -93,6 +92,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
+        <img id="fotoRandom" src="https://www.google.com/search?q=foto&client=ubuntu-sn&hs=fYK&sca_esv=579161870&channel=fs&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjb68jkiqiCAxWuHLkGHYExBM4Q_AUoAXoECAIQAw&biw=1610&bih=938&dpr=1#imgrc=Qwr8pxM2o-cOfM">
     </body>
     <footer>
         <p id="textoFooter">Vení a aprender, divertirte y vivir experiencias únicas a la Expo Modelo 2024</p>

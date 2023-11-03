@@ -17,7 +17,12 @@ import { NgFor, NgIf } from '@angular/common';
 export class ExternalPageComponent {
 	showNavigationArrows = false;
 	showNavigationIndicators = false;
-	images = [1055, 194, 368].map((n) => `https://picsum.photos/id/${n}/900/500`);
+	images = [
+		"https://img.freepik.com/vector-premium/linea-cuadrada-brillante_1189-1600.jpg",
+		"https://img.freepik.com/vector-premium/marco-cuadrado-rosa-claro-cuadrado-rosa-claro-bandera-cuadrada-luz-rosa_1189-2997.jpg",
+		"https://img.freepik.com/vector-gratis/galleta-cuadrada-estilo-dibujos-animados-aislado_1308-64646.jpg"
+	];
+	// [1055, 194, 268].map((n) => `https://picsum.photos/id/${n}/385`)
 
 	constructor(config: NgbCarouselConfig) {
 		// customize default values of carousels used by this component tree
