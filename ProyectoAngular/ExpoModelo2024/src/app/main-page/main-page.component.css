@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* NAV */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    transition: 0.7s;
+    z-index: 10;
+
+}
+header.abajo{
+    background: #ffffff;
+
+}
+header .logo{
+    position: relative;
+    color: #000000;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: #000;
+}
+
+
+/* NAV -- */
+
+body .container{
+    padding-top: 4em;
+}
+
+.imagen{
+    width: 100%;
+}
+
+#expoLoguito{
+height: 50px;
+}
+
+header{
+    background-color: rgba(0, 25, 48, 0.555);
+    
+}
+
+
+hr{
+
+    height: 60px;
+    width: 2px;
+    margin: 0;
+    background-color: #000;
+}
+
+header{
+
+    padding: 0  ;
+    display: flex;
+   justify-content: center;
+}
+
+
+#tituloTem{
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+}
+/*carrousel de las materias*/
+
+@media(max-width: 500px){
+
+    .card{
+        width: 100%;
+        background-color: #fcfcfc;
+        border-radius: 4%;
+        box-shadow: 5px 5px 15px -3px rgba(100, 176, 176,0.377);
+        padding: 10px 15px;
+    }
+    .menu-profile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .menu-profile .menu{
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+    .menu-profile .profile{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .card h3{
+        font-size: 19px;
+        margin-top: 15px;
+        line-height: 24px;
+        color: #131313;
+    }
+    .card .search-box{
+        display: flex;
+        margin-top: 15px;
+    }
+    .card .search-box input{
+        width: 100%;
+        outline: none;
+        border: none;
+        padding: 10px;
+        background-color: #f5f4f4;
+        margin-right: 3px;
+    }
+    .card input::placeholder{
+        font-size: 10px;
+        color: #b7b7b7;
+        font-weight: 500;
+    }
+    .card .search-box button{
+        width: 45px;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: #fd5e3f;
+        outline: none;
+    }
+    .card .search-box button img{
+        width: 45%;
+    }
+    .slider-container{
+        margin-top: 22px;
+        margin-bottom: 20px;
+    }
+    .slider-container ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 18px;
+    }
+    .slider-container ul li{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .slider-container ul li:hover{
+        color: #fd5e3f;
+    }
+    .slider-container ul li.active{
+        color: #fd5e3f;
+        border-bottom: 1px solid #fd5e3f;
+        line-height: 20px;
+    }
+    .swiper-container{
+        width: 100%;
+        height: 170px;
+        margin: 10px 0 10px;
+    } 
+    .swiper-slide{
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        margin-right: 10px !important;
+        width: 110px !important;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content:center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items:center;
+        align-items: center;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+    .swiper-slide img{
+       width: 100%;
+       height: 100%; 
+    }
+    .swiper-slide .shade{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.164);
+        position: absolute;
+    }
+    .swiper-slide h5{
+        position: absolute;
+        color: #fff;
+        font-size: 10px;
+        left: 0;
+        margin-left: 8px;
+        text-align: left;
+        line-height: 14px;
+        bottom: 17%;
+    }
+    .swiper-slide h6{
+        position: absolute;
+        color: #fff;
+        font-size: 9px;
+        left: 0;
+        bottom: 6%;
+        margin-left: 8px;
+        text-align: left;
+        line-height: 14px;
+        font-weight: 400;
+    }
+    .swiper-slide h6 img{
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        
+    }
+
+
+    .vertical.carousel .carousel-item {
+        overflow: hidden;
+    }
+    
+    .vertical.carousel .carousel-item-next:not(.carousel-item-start),
+    .vertical.carousel .active.carousel-item-end {
+        transform: translateY(100%);
+    }
+    
+    .vertical.carousel .carousel-item-prev:not(.carousel-item-end),
+    .vertical.carousel .active.carousel-item-start {
+        transform: translateY(-100%);
+    }
+    
+    .vertical.carousel .carousel-indicators {
+        top: 0;
+        left: unset;
+    
+        margin-left: unset !important;
+        margin-right: 1rem;
+    
+        flex-direction: column;
+    }
+    
+    .vertical.carousel .carousel-indicators [data-bs-target] {
+        height: 30px;
+        width: 3px;
+    }
+    
+    .vertical.carousel .carousel-control-prev,
+    .vertical.carousel .carousel-control-next {
+        width: 100%;
+        height: 60px;
+    }
+    
+    .vertical.carousel .carousel-control-prev-icon,
+    .vertical.carousel .carousel-control-next-icon {
+        transform: rotateZ(90deg);
+    }
+    
+    .vertical.carousel .carousel-control-next {
+        top: unset;
+        bottom: 0;
+    }
+
+  
+}
+
+.slider-container {
+    overflow-x: hidden;
+  }
+  
+/* carrousel vertical*/
