@@ -10,7 +10,7 @@ body{
 header{
     position:fixed;
     /*background-color: rgb(73, 73, 73); ESTE ES GRIS*/
-    background-color: #000a23dc;
+    background-color: #000a23e7;
     width: 100%;
     z-index: 4;
     display: flex;
@@ -86,11 +86,26 @@ DEGRADE CON DIV ↓
 }
 
 
-
-#ustedEstaAqui{
+.container{
     margin-top: 20%;
-    display:flex;
+    position: relative;
+}
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
     justify-content: center;
+    padding: 10px;
+}
+.image{
+    border: 5px solid #000a23;
+    overflow: hidden;
+    cursor: pointer;
+}
+.image img{
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
 }
 .popup-image{
     position: fixed;
@@ -99,13 +114,14 @@ DEGRADE CON DIV ↓
     height: 100%;
     width: 100%;
     z-index: 100;
+    display: none;
 }
 .popup-image span{
+    font-size: 30px;
     position: absolute;
     top: 0; right: 10px;
-    font-size: 60px;
     font-weight: bolder;
-    color: #fff;
+    color: rgb(226, 226, 226);
     cursor: pointer;
     z-index: 100;
 }
@@ -113,9 +129,9 @@ DEGRADE CON DIV ↓
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    border: 5px solid #fff;
+    border: 5px solid #000a23dc;
     border-radius: 5px;
-    width: 750px;
+    width: 90%;
     object-fit: cover;
 }
 @media (max-width:768px){
