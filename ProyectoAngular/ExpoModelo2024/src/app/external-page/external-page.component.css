@@ -34,21 +34,6 @@ a{
     color: rgb(172, 172, 172) !important;
 }
 
-
-
-/*#carouselExampleSlidesOnly{
-    opacity: 100%;
-    z-index: 1;
-}
-DEGRADE CON DIV ↓ 
-#degrade{ 
-    position: absolute;
-    display:inline-block;
-    height:46.5%;
-    width: 100%;
-    background: linear-gradient(0deg,rgb(255, 255, 255),rgba(255, 255, 255, 0.247),rgba(0, 0, 0, 0.315)30%);
-    z-index: 2;   
-}*/
 .carrusel-gradient {
     max-width: 100%; 
     width: 800px;
@@ -94,7 +79,6 @@ DEGRADE CON DIV ↓
     display: flex;
     flex-wrap: wrap;
     gap:15px;
-    justify-content: center;
     padding: 10px;
 }
 .image{
@@ -107,38 +91,13 @@ DEGRADE CON DIV ↓
     object-fit: cover;
     transition: .2s linear;
 }
-.popup-image{
-    position: fixed;
-    top: 0; left: 0;
-    background: rgba(0,0,0,.9);
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-    display: none;
-}
-.popup-image span{
-    font-size: 30px;
+#location-dot{
     position: absolute;
-    top: 0; right: 10px;
-    font-weight: bolder;
-    color: rgb(226, 226, 226);
-    cursor: pointer;
-    z-index: 100;
+    font-size: 25px;
+    padding-left: 51px;
+    padding-top: 30px;
 }
-.popup-image img{
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid #000a23dc;
-    border-radius: 5px;
-    width: 90%;
-    object-fit: cover;
-}
-@media (max-width:768px){
-    .popup-image img{
-        width: 95%;
-    }
-}
+
 
 
 
@@ -177,12 +136,4 @@ footer{
 .social{
     padding-right: 10px;
     padding-left: 10px;
-}
-
-
-img{
-    box-shadow:  0 -50px 50px rgb(230, 18, 18) inset;
-}
-#fotoRandom{
-    width: 100%;
 }
