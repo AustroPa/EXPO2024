@@ -35,17 +35,38 @@
 		</nav>
 
 </header>
+
+
 <body>
 <div class="container">
-    <div class="imagen">
-        <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="">
-    </div>
-    <div>
-    <h1 id="tituloTem">TEMATICAS</h1> 
-    </div>
+
+  <h1 id="tituloTem">TEMATICAS</h1> 
+
+<slider-container>
+  <swiper-container id="slide" slides-per-view="3.25" spaceBetween="30" clickable="true" enabled="true" momentum="true" sticky="false" minimumVelocity="0.02" >
+    
+    <swiper-slide><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+    <swiper-slide><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+    <swiper-slide><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+    <swiper-slide><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+    <swiper-slide><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+    <swiper-slide><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+
+  </swiper-container>
+</slider-container>
+
+ </div>
+
+<swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true" navigation="enabled">
+  <swiper-slide>slide1</swiper-slide>
+  <swiper-slide>slide2</swiper-slide>
+  <swiper-slide>slide3</swiper-slide>
+</swiper-container>
+
+<!--
     <div class="slider-container">
       
-        <div class="swiper-container">
+        <swiper-container>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="shade">
@@ -119,9 +140,13 @@
             </div>
             </div>
           </div>
+          
 
 
     </div>
+
+    -->
+    
       <div id="carouselExampleCaptions" class="carousel slide vertical" data-bs-ride="false">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -131,7 +156,7 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/PlantaNueva.png" class="d-block w-100" alt="...">
+            <img src="src\assets\plano-casa-bn.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
@@ -160,9 +185,7 @@
       </div>
 
       
-    </div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     
 </body>
 

@@ -63,39 +63,25 @@ header.abajo ul li a{
 }
 
 
-/* NAV -- */
+header{
+    background-color: rgba(0, 25, 48, 0.555);
+    padding: 0  ;
+    display: flex;
+   justify-content: center;
+}
+/* -- NAV -- */
+
+.mapa{
+    width: 100%;    
+}
 
 body .container{
     padding-top: 4em;
 }
 
-.imagen{
-    width: 100%;
-}
 
-#expoLoguito{
-height: 50px;
-}
-
-header{
-    background-color: rgba(0, 25, 48, 0.555);
-    
-}
-
-
-hr{
-
-    height: 60px;
-    width: 2px;
-    margin: 0;
-    background-color: #000;
-}
-
-header{
-
-    padding: 0  ;
-    display: flex;
-   justify-content: center;
+#slideImagen{
+    width: 100%;    
 }
 
 
@@ -108,6 +94,8 @@ header{
     width: 100%;
     text-align: center;
 }
+
+
 /*carrousel de las materias*/
 
 @media(max-width: 500px){
@@ -173,7 +161,7 @@ header{
     .card .search-box button img{
         width: 45%;
     }
-    .slider-container{
+    slider-container{
         margin-top: 22px;
         margin-bottom: 20px;
     }
@@ -196,12 +184,19 @@ header{
         border-bottom: 1px solid #fd5e3f;
         line-height: 20px;
     }
-    .swiper-container{
+    swiper-container {
         width: 100%;
-        height: 170px;
         margin: 10px 0 10px;
     } 
-    .swiper-slide{
+
+    swiper-container{
+        height: 20%;
+    }
+    swiper-container #slide{
+        height: 170px;
+    }
+    
+    #slide swiper-slide{
         text-align: center;
         font-size: 18px;
         background: #fff;
@@ -223,9 +218,9 @@ header{
         border-radius: 5%;
         overflow: hidden;
     }
-    .swiper-slide img{
+    
+    swiper-slide img{
        width: 100%;
-       height: 100%; 
     }
     .swiper-slide .shade{
         width: 100%;
@@ -310,8 +305,5 @@ header{
   
 }
 
-.slider-container {
-    overflow-x: hidden;
-  }
   
 /* carrousel vertical*/
