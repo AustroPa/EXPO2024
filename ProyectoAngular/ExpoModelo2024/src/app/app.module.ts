@@ -7,6 +7,8 @@ import { ExternalPageComponent } from './external-page/external-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImagePopupComponent } from './image-popup/image-popup.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
 // register Swiper custom elements
@@ -28,6 +30,7 @@ const routes: Routes = [
   ],
   imports: [
     RouterModule.forRoot(routes),
+    CarouselModule.forRoot(),
     ImagePopupComponent,
     BrowserModule,
     ExternalPageComponent,

@@ -112,28 +112,3 @@ a{
     list-style-type: square;
 }
 
-
-
-footer{
-    background-color: #000a23;
-    margin: 0%;
-    width: 100%;
-    position: absolute;
-    display: grid;
-    place-items: center;
-    padding: 9%;
-}
-#textoFooter{
-    color: rgb(226, 226, 226);
-    text-align: center;
-    margin-bottom: 0%;
-}
-#botonesRedesSociales{
-    background-color: transparent;
-    border:none;
-    padding-top: 5%;
-}
-.social{
-    padding-right: 10px;
-    padding-left: 10px;
-}
