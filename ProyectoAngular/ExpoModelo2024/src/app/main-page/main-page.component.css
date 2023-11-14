@@ -14,15 +14,18 @@ header{
     display: flex;
     transition: 0.7s;
     z-index: 10;
+    background-color: #000a23;
+    padding: 5em;
+    justify-content: center;
 
 }
-header.abajo{
+header .abajo{
     background: #ffffff;
-
+    padding: 1em;
 }
 header .logo{
     position: relative;
-    color: #000000;
+    color: rgb(209, 209, 209);;
     font-weight: bold;
     font-size: 2em;
     letter-spacing: 2px;
@@ -63,13 +66,6 @@ header.abajo ul li a{
 }
 
 
-header{
-    background-color: rgba(0, 25, 48, 0.555);
-    padding: 0  ;
-    display: flex;
-   justify-content: center;
-}
-
 header.scroll {
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al hacer scroll */
@@ -78,9 +74,18 @@ header.scroll {
 }
 
 /* -- NAV -- */
+#descripcion{
+    background-color: #02253d;
+    font-style: italic;
+    font-family: "Roboto Slab",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding: 5%;
+    color: rgb(156, 156, 156);
+    text-align: center;
+
+}
 
 body .containerSlide{
-    padding-top: 4em;
+    padding-top: 3em;
 }
 
 
@@ -92,8 +97,17 @@ body .containerSlide{
     z-index: 3;
     width: 100%;
     text-align: center;
+    margin-top: 20%;
 }
 
+body{
+    padding-top: 10em;
+    transition: 0.7s;
+}
+
+body.scroll{
+    padding-top: 2em;
+}
 
 /*carrousel de las materias*/
 
@@ -262,13 +276,20 @@ body .containerSlide{
 }
 
 /* main-page.component.css */
-
-/* main-page.component.css */
+#tituloPlano{
+    display: flex;
+    margin-top: 20%;
+    justify-content: center;
+    margin-bottom: 5%;
+}
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3%;
+    margin-bottom: 15%;
+    border: 5px solid #02253d;
   }
   
   .carousel {

@@ -30,11 +30,13 @@
     </nav>
 </header>
 
+<body [ngClass]="{'scroll': isScrolled}">
 
-<body>
-<div class="containerSlide">
 
-  <h1 id="tituloTem">TEMATICAS</h1> 
+  <div class="containerSlide">
+    <div id="descripcion"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam, quibusdam, natus voluptatum atque, id doloremque repellat beatae maxime in facere distinctio quisquam eligendi et maiores animi officiis recusandae? Ea.</p></div>
+  
+    <h1 id="tituloTem">TEMATICAS</h1> 
 
 <slider-container>
   <swiper-container id="slide" slides-per-view="3.25" spaceBetween="30" clickable="true" enabled="true" momentum="true" sticky="false" minimumVelocity="0.02" >
@@ -52,10 +54,9 @@
  </div>
 
 <!-- main-page.component.html -->
-<!-- main-page.component.html -->
-<!-- main-page.component.html -->
-<!-- main-page.component.html -->
 
+
+<h2 id="tituloPlano">Primer Piso</h2>
 <div class="container" (wheel)="handleMouseWheel($event)">
   <carousel [activeSlide]="currentSlideIndex" [interval]="0" class="carousel">
     <slide *ngFor="let image of images; let i = index">
