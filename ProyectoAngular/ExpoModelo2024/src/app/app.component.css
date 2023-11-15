@@ -7,7 +7,7 @@ footer{
         display: grid;
     place-items: center;
     padding: 9%;
-    bottom: 0 ;
+    bottom: 0;
 }
 #textoFooter{
     color: rgb(226, 226, 226);
