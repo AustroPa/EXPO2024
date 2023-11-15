@@ -13,10 +13,10 @@ header{
     width: 100%;
     transition: 0.7s;
     z-index: 10;
-    background-color: rgba(1, 39, 75, 0.836);
+    background-color:#000a23;
     display: flex;
-   justify-content: center;
-   padding: 5em;
+    justify-content: center;
+    padding: 6.5em;
 }
 nav{
     display: flex;
@@ -33,36 +33,39 @@ header ul{
     align-items: center;
     height: 100%;
 }
+header.scroll ul{
+    padding: 0em;
+}
 
 header ul li{
     list-style: none;
+    
 }
 
 header ul li p{
     position: relative;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Montserrat', sans-serif;  
     margin: 0 15px;
     text-decoration: none;
-    color: #000000;
-    font-size: 3em;
+    color: rgb(226, 226, 226);
+    font-size: 2em;
     transition: 0.7s;
+    font-weight: 900;
 }
 
 header.scroll {
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al hacer scroll */
-    padding: 1em; /* Puedes ajustar el espacio según tus necesidades */
+    padding: 0.5em; /* Puedes ajustar el espacio según tus necesidades */
     transition: background-color 0.3s, padding 0.7s, box-shadow 0.7s; /* Agrega transiciones */
 }
 
 header.scroll ul li p{
     position: relative;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Montserrat', sans-serif;  
     margin: 0 15px;
     text-decoration: none;
-    color: #000000;
+    color: #464646;
     font-size: 1em;
     transition: 0.7s;
 }
@@ -71,31 +74,33 @@ header.scroll ul li p{
 body{
     padding-top: 19em;
     transition:padding 0.8s;
+    padding-bottom: 2em;
 }
 
 body.scroll{
-    padding-top: 10em;
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 
 
 
 #descripcion{
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: #02253d;
 }
 
 #descripcion p{
-    padding: 2em;
+    padding: 1em;
     text-align: center;
     font-style: italic;
     font-family: "Roboto Slab",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: rgb(226, 226, 226);
 }
 
 
 
 #tituloTem{
     font-family: 'Montserrat', sans-serif;  
-    font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: #464646;
     font-size: larger;
     z-index: 3;
     width: 100%;
@@ -273,17 +278,32 @@ body.scroll{
 }
 
 /* main-page.component.css */
+#tituloPlano {
+    font-size: larger;
+    display: flex;
+    padding-top: 2em;
+    justify-content: left; 
+    color: #464646;
+}
 
 
+/*-------------------------------*/
+.containerSlide{
+padding-top: 2em;
+}
 .container {
+    margin: 10px 0 10px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    border: 5px solid #02253d;
+    
+}
   
   .carousel {
     width: 100%;
-    height: 25em; /* Establece la altura fija deseada */
+    height: 20em; /* Establece la altura fija deseada */
     overflow: hidden;
   }
   
