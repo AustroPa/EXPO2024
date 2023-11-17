@@ -16,7 +16,10 @@ header{
     background-color:#000a23;
     display: flex;
     justify-content: center;
-    padding: 6.5em;
+    height: 100%;
+    transition: height 1s;
+    
+
 }
 nav{
     display: flex;
@@ -54,6 +57,8 @@ header ul li p{
 }
 
 header.scroll {
+    transition: height 1s;
+    height: 70px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al hacer scroll */
     padding: 0.5em; /* Puedes ajustar el espacio según tus necesidades */
@@ -78,7 +83,7 @@ body{
 }
 
 body.scroll{
-    padding-top: 1em;
+    padding-top: 6em;
     padding-bottom: 2em;
 }
 
@@ -114,110 +119,23 @@ body.scroll{
 /*carrousel de las materias*/
 
 @media(max-width: 500px){
-/*
-    .card{
-        width: 100%;
-        background-color: #fcfcfc;
-        border-radius: 4%;
-        box-shadow: 5px 5px 15px -3px rgba(100, 176, 176,0.377);
-        padding: 10px 15px;
-    }
-    .menu-profile{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 15px;
-    }
-    .menu-profile .menu{
-        width: 18px;
-        height: 18px;
-        cursor: pointer;
-    }
-    .menu-profile .profile{
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    .card h3{
-        font-size: 19px;
-        margin-top: 15px;
-        line-height: 24px;
-        color: #131313;
-    }
-    .card .search-box{
-        display: flex;
-        margin-top: 15px;
-    }
-    .card .search-box input{
-        width: 100%;
-        outline: none;
-        border: none;
-        padding: 10px;
-        background-color: #f5f4f4;
-        margin-right: 3px;
-    }
-    .card input::placeholder{
-        font-size: 10px;
-        color: #b7b7b7;
-        font-weight: 500;
-    }
-    .card .search-box button{
-        width: 45px;
-        border: none;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        background-color: #fd5e3f;
-        outline: none;
-    }
-    .card .search-box button img{
-        width: 45%;
-    }
-    */
+
 
     slider-container{
         margin-top: 22px;
         margin-bottom: 20px;
     }
 
-    /*
-    .slider-container ul{
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 18px;
-    }
-    .slider-container ul li{
-        font-size: 12px;
-        font-weight: 600;
-    }
-    .slider-container ul li:hover{
-        color: #fd5e3f;
-    }
-    .slider-container ul li.active{
-        color: #fd5e3f;
-        border-bottom: 1px solid #fd5e3f;
-        line-height: 20px;
-    }
-
-    */
     #slide{
         width: 100%;
         margin: 10px 0 10px;
-        height: 170px;
+        height: 220px;
     }
     
     .slideCarrusel{
         text-align: center;
-        font-size: 18px;
-        background: #fff;
-        margin-right: 10px !important;
-        width: 110px !important;
-
+        margin-right: 15px !important;
+        width: 120px !important;
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -231,52 +149,44 @@ body.scroll{
         -webkit-align-items:center;
         align-items: center;
         border-radius: 5%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     
     .slideImagen{
         width: 100%;
     }
 
-
-    /*
-    .swiper-slide .shade{
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.164);
-        position: absolute;
+    .slideCarrusel:nth-child(1) .slideImagen {
+        box-shadow: 0px 5px 10px rgba(255, 0, 0, 0.5); /* Sombra roja para la primera imagen */
     }
-    .swiper-slide h5{
-        position: absolute;
-        color: #fff;
-        font-size: 10px;
-        left: 0;
-        margin-left: 8px;
-        text-align: left;
-        line-height: 14px;
-        bottom: 17%;
+    
+    .slideCarrusel:nth-child(2) .slideImagen {
+        box-shadow: 0px 5px 10px rgba(0, 255, 0, 0.5); /* Sombra verde para la segunda imagen */
     }
-    .swiper-slide h6{
-        position: absolute;
-        color: #fff;
-        font-size: 9px;
-        left: 0;
-        bottom: 6%;
-        margin-left: 8px;
-        text-align: left;
-        line-height: 14px;
-        font-weight: 400;
+    
+    .slideCarrusel:nth-child(3) .slideImagen {
+        box-shadow: 0px 5px 10px rgba(0, 0, 255, 0.5); /* Sombra azul para la tercera imagen */
     }
-    .swiper-slide h6 img{
-        width: 10px;
-        height: 10px;
-        margin-right: 5px;
-        
+    
+    .slideCarrusel:nth-child(4) .slideImagen {
+        box-shadow: 0px 5px 10px rgba(255, 255, 0, 0.5); /* Sombra amarilla para la cuarta imagen */
     }
-    */
+    
+    .slideCarrusel:nth-child(5) .slideImagen {
+        box-shadow: 0px 5px 10px rgba(255, 0, 255, 0.5); /* Sombra magenta para la quinta imagen */
+    }
 
 }
-
+#flechaDerecha{
+    display: flex;
+    justify-content: right;
+    font-size: larger;
+    position: absolute;
+    margin-top: -7em;
+    margin-left: 17.5em;
+    z-index: 5;
+    color: rgb(226, 226, 226);
+}
 /* main-page.component.css */
 #tituloPlano {
     font-size: larger;
