@@ -16,6 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">        
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Wix+Madefor+Display:wght@800&display=swap" rel="stylesheet">
    
 
 
@@ -23,25 +27,33 @@
 
   </head>
 
-  <header [ngClass]="{'scroll': isScrolled}">
+<header [ngClass]="{'scroll': isScrolled}">
     <nav>
-        <a href="#" class="logo">ExpoModelo</a>
-        <ul></ul>
+      <ul>
+      <li> <p>ExpoModelo<p></li>
+      <li><p>2024</p></li>
+      </ul>
+       
+      
     </nav>
 </header>
 
+
 <body [ngClass]="{'scroll': isScrolled}">
 
+  <div id="descripcion">
+    <p>Exposicion Politecnico Modelo, cada 2 años se realiza esta festividad! Bienvenido, Abajo vas a poder ver las tematicas de la Expo</p>
+  </div>
+
+<div id="Slides">
 
   <div class="containerSlide">
-    <div id="descripcion"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam, quibusdam, natus voluptatum atque, id doloremque repellat beatae maxime in facere distinctio quisquam eligendi et maiores animi officiis recusandae? Ea.</p></div>
-  
-    <h1 id="tituloTem">TEMATICAS</h1> 
+
+  <h1 id="tituloTem">Tematicas</h1> 
 
 <slider-container>
   <swiper-container id="slide" slides-per-view="3.25" spaceBetween="30" clickable="true" enabled="true" momentum="true" sticky="false" minimumVelocity="0.02" >
     
-    <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
     <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
     <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
     <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
@@ -54,9 +66,9 @@
  </div>
 
 <!-- main-page.component.html -->
+<div id="CarruselPisos">
+  <h2 id="tituloPlano">Primer Piso</h2>
 
-
-<h2 id="tituloPlano">Primer Piso</h2>
 <div class="container" (wheel)="handleMouseWheel($event)">
   <carousel [activeSlide]="currentSlideIndex" [interval]="0" class="carousel">
     <slide *ngFor="let image of images; let i = index">
@@ -75,6 +87,8 @@
   </div>
 </div>
 
+</div>
+</div>
 <!--
     <div class="slider-container">
       
