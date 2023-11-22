@@ -67,7 +67,7 @@
 
   <!-- main-page.component.html -->
   <div id="CarruselPisos">
-    <h2 id="tituloPlano">Primer Piso</h2>
+    <h2 id="tituloPlano">{{ titles[currentSlideIndex] }}</h2>
 
   <div class="container" (wheel)="handleMouseWheel($event)">
     <carousel [activeSlide]="currentSlideIndex" [interval]="0" class="carousel">

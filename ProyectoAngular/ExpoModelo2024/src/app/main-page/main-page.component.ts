@@ -15,10 +15,15 @@
       this.isScrolled = scrollPosition > 0;
     }
     images = [
-      "/assets/PlantaAlta.png",
       "/assets/PlantaBaja.png",
-      "/assets/PlantaNueva.png"
+      "/assets/PlantaAlta.png"
     ];
+
+    titles = [
+      "Planta Baja",
+      "Primer Piso"
+    ];
+  
     currentSlideIndex = 0;
 
     handleMouseWheel(event: WheelEvent) {
