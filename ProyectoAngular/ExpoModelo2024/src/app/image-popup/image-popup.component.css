@@ -39,7 +39,7 @@ img {
 #location-dot{
     position: absolute;
     font-size: 25px;
-    padding-left: 51px;
-    padding-top: 30px;
+    margin-left: -111px;
+    margin-top: 34px;
 }
   
