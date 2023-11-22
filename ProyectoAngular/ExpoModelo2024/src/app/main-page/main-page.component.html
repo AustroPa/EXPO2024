@@ -49,130 +49,46 @@
 
   <div class="containerSlide">
 
-  <h1 id="tituloTem">Tematicas</h1> 
+    <h1 id="tituloTem">Tematicas</h1> 
 
-<slider-container>
-  <swiper-container id="slide" slides-per-view="3.25" spaceBetween="30" clickable="true" enabled="true" momentum="true" sticky="false" minimumVelocity="0.02" >
-    
-    <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
-    <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
-    <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
-    <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
-    <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
-
-  </swiper-container>
-</slider-container>
-
- </div>
-
-<!-- main-page.component.html -->
-<div id="CarruselPisos">
-  <h2 id="tituloPlano">Primer Piso</h2>
-
-<div class="container" (wheel)="handleMouseWheel($event)">
-  <carousel [activeSlide]="currentSlideIndex" [interval]="0" class="carousel">
-    <slide *ngFor="let image of images; let i = index">
-      <div class="carousel-image-container">
-        <img [src]="image" alt="Slide {{ i + 1 }}">
-      </div>
-    </slide>
-  </carousel>
-
-  <div class="top-controls">
-    <button (click)="prevSlide()" class="custom-carousel-control-prev" role="button"></button>
+    <slider-container>
+      <swiper-container id="slide" slides-per-view="2.7" spaceBetween="30" clickable="true" enabled="true" momentum="true" sticky="false" minimumVelocity="0.02" >
+        
+        <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+        <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+        <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+        <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+        <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
+        
+      </swiper-container>
+    </slider-container>
+    <i id="flechaDerecha" class="fa-solid fa-circle-chevron-right"></i>
   </div>
 
-  <div class="bottom-controls">
-    <button (click)="nextSlide()" class="custom-carousel-control-next" role="button"></button>
-  </div>
-</div>
+  <!-- main-page.component.html -->
+  <div id="CarruselPisos">
+    <h2 id="tituloPlano">Primer Piso</h2>
 
-</div>
-</div>
-<!--
-    <div class="slider-container">
-      
-        <swiper-container>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="shade">
-                       <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="image1" />
-                       <h5>Catherine <br /> monasstery</h5> 
-                       <h6><img src="https://i.postimg.cc/J0LyQGdT/pin.png" alt="pin"/>Norwasy</h6>
-                    </div>
-                </div>
-              <div class="swiper-slide">
-                <div class="shade">
-                   <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="image1" />
-                   <h5>Catherine <br /> monasstery</h5> 
-                   <h6><img src="https://i.postimg.cc/J0LyQGdT/pin.png" alt="pin"/>Norwasy</h6>
-                </div>
-            </div>
-              <div class="swiper-slide">
-                <div class="shade"></div>
-                   <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="image1" />
-                   <h5>Catherine <br /> monasstery</h5> 
-                   <h6><img src="https://i.postimg.cc/J0LyQGdT/pin.png" alt="pin"/>Norwasy</h6>
-                
-            </div>
-              <div class="swiper-slide">
-                <div class="shade"></div>
-                   <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="image1" />
-                   <h5>Catherine <br /> monasstery</h5> 
-                   <h6><img src="https://i.postimg.cc/J0LyQGdT/pin.png" alt="pin"/>Norwasy</h6>
-                
-            </div>
-              <div class="swiper-slide">
-                <div class="shade"></div>
-                   <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="image1" />
-                   <h5>Catherine <br /> monasstery</h5> 
-                   <h6><img src="https://i.postimg.cc/J0LyQGdT/pin.png" alt="pin"/>Norwasy</h6>
-                
-            </div>
-              <div class="swiper-slide">
-                <div class="shade"> </div>
-                   <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="image1" />
-                   <h5>Catherine <br /> monasstery</h5> 
-                   <h6><img src="https://i.postimg.cc/J0LyQGdT/pin.png" alt="pin"/>Norwasy</h6>
-               
-            </div>
-              <div class="swiper-slide">
-                <div class="shade"></div>
-                   <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="image1" />
-                   <h5>Catherine <br /> monasstery</h5> 
-                   <h6><img src="https://i.postimg.cc/J0LyQGdT/pin.png" alt="pin"/>Norwasy</h6>
-                
-            </div>
-              <div class="swiper-slide">
-                <div class="shade"></div>
-                   <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="image1" />
-                   <h5>Catherine <br /> monasstery</h5> 
-                   <h6><img src="https://i.postimg.cc/J0LyQGdT/pin.png" alt="pin"/>Norwasy</h6>
-                
-            </div>
-              <div class="swiper-slide">
-                <div class="shade"></div>
-                   <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="image1" />
-                   <h5>Catherine <br /> monasstery</h5> 
-                   <h6><img src="https://i.postimg.cc/J0LyQGdT/pin.png" alt="pin"/>Norwasy</h6>
-                
-            </div>
-              <div class="swiper-slide">
-                <div class="shade"></div>
-                   <img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" alt="image1" />
-                   <h5>Catherine <br /> monasstery</h5> 
-                   <h6><img src="https://i.postimg.cc/J0LyQGdT/pin.png" alt="pin"/>Norwasy</h6>
-                
-            </div>
-            </div>
-          </div>
-          
+  <div class="container" (wheel)="handleMouseWheel($event)">
+    <carousel [activeSlide]="currentSlideIndex" [interval]="0" class="carousel">
+      <slide *ngFor="let image of images; let i = index">
+        <div class="carousel-image-container">
+          <img [src]="image" alt="Slide {{ i + 1 }}">
+        </div>
+      </slide>
+    </carousel>
 
-
+    <div class="top-controls">
+      <button (click)="prevSlide()" class="custom-carousel-control-prev" role="button"></button>
     </div>
 
-    -->
+    <div class="bottom-controls">
+      <button (click)="nextSlide()" class="custom-carousel-control-next" role="button"></button>
+    </div>
+  </div>
 
+  </div>
+</div>
       
     
     
