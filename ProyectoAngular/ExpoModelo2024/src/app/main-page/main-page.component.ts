@@ -1,4 +1,5 @@
   import { Component, HostListener } from '@angular/core';
+  import { Router } from '@angular/router';
 
   @Component({
     selector: 'app-main-page',
@@ -6,6 +7,8 @@
     styleUrls: ['./main-page.component.css']
   })
   export class MainPageComponent {
+    idEnvio:any;
+    constructor(private router: Router) {}
 
     isScrolled = false;
 
@@ -26,5 +29,10 @@
     ];
     noWrapSlides = true;
 
+
+     onClickIrAExternalPage(id : any){
+      this.idEnvio=id;
+      this.router.navigate(['/externalPage']);
+      }
   }
  

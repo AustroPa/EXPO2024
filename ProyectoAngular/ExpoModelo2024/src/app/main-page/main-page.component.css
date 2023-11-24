@@ -226,11 +226,22 @@ padding-top: 2em;
   }
   
   .carousel-caption{
-    bottom: 0;
+    bottom: 1em;
+    font-family: 'Montserrat', sans-serif;  
+    color: #464646;
+    font-weight: bold;
   }
 
   .carousel-indicators{
     bottom: 0;
+  }
+
+  #mapText{
+    padding-bottom: 1.5em;
+  }
+
+  .boton{
+    border: none;
   }
   
 /* carrousel vertical*/

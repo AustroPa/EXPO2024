@@ -54,12 +54,12 @@
     <slider-container>
       <swiper-container id="slide" slides-per-view="2.7" spaceBetween="30" clickable="true" enabled="true" momentum="true" sticky="false" minimumVelocity="0.02" >
         
-        <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
-        <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
-        <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
-        <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
-        <swiper-slide class="slideCarrusel"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen"></swiper-slide>
-        
+        <swiper-slide class="slideCarrusel"><button class="boton" (click)="onClickIrAExternalPage(1)"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen" ></button> </swiper-slide>
+        <swiper-slide class="slideCarrusel"><button class="boton" (click)="onClickIrAExternalPage(2)"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen" ></button> </swiper-slide>
+        <swiper-slide class="slideCarrusel"><button class="boton" (click)="onClickIrAExternalPage(3)"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen" ></button> </swiper-slide>
+        <swiper-slide class="slideCarrusel"><button class="boton" (click)="onClickIrAExternalPage(4)"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen" ></button> </swiper-slide>
+        <swiper-slide class="slideCarrusel"><button class="boton" (click)="onClickIrAExternalPage(5)"><img src="https://i.postimg.cc/y8T0jpTZ/image1.jpg" class="slideImagen" ></button> </swiper-slide>
+
       </swiper-container>
     </slider-container>
     <i id="flechaDerecha" class="fa-solid fa-circle-chevron-right"></i>
@@ -67,7 +67,7 @@
 
   <!-- main-page.component.html -->
   <div class="containerSlide">
-    <h1 class="tituloTem">Mapa</h1> 
+    <h1 class="tituloTem" id="mapText">Mapa</h1> 
   <div id="CarruselPisos">
     
     <carousel [noWrap]="noWrapSlides">

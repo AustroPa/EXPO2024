@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,  Input } from '@angular/core';
 import { ImagePopupComponent } from '../image-popup/image-popup.component';
 import { Router } from '@angular/router';
 
@@ -42,6 +42,7 @@ export class ExternalPageComponent {
   	}
 
 	onClickIrAMainPage() {
+
 	this.router.navigate(['/main-page']);
 	}
 }
