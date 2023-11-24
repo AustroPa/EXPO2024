@@ -14,38 +14,17 @@
       const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
       this.isScrolled = scrollPosition > 0;
     }
-    images = [
-      "/assets/PlantaBaja.png",
-      "/assets/PlantaAlta.png"
-    ];
 
     titles = [
       "Planta Baja",
       "Primer Piso"
     ];
   
-    currentSlideIndex = 0;
+    slides: {image: string; text?: string}[] = [
+      {image: '/assets/PlantaBaja.png', text: "Planta Baja"},
+      {image: '/assets/PlantaAlta.png', text: "Planta Alta"}
+    ];
+    noWrapSlides = true;
 
-    handleMouseWheel(event: WheelEvent) {
-      // Detecta la dirección de la rueda del ratón y desplaza el carrusel en consecuencia
-      if (event.deltaY > 0) {
-        this.nextSlide();
-      } else if (event.deltaY < 0) {
-        this.prevSlide();
-      }
-      // Evita el comportamiento predeterminado del desplazamiento de la rueda
-      event.preventDefault();
-    }
-  
-    prevSlide() {
-      this.currentSlideIndex = (this.currentSlideIndex - 1 + this.images.length) % this.images.length;
-    }
-  
-    nextSlide() {
-      this.currentSlideIndex = (this.currentSlideIndex + 1) % this.images.length;
-    }
-  
-    constructor() {
-      console.log(this.images);
-    }
   }
+ 

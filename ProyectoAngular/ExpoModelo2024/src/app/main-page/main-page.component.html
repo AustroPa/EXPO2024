@@ -49,7 +49,7 @@
 
   <div class="containerSlide">
 
-    <h1 id="tituloTem">Tematicas</h1> 
+    <h1 class="tituloTem">Tematicas</h1> 
 
     <slider-container>
       <swiper-container id="slide" slides-per-view="2.7" spaceBetween="30" clickable="true" enabled="true" momentum="true" sticky="false" minimumVelocity="0.02" >
@@ -66,30 +66,28 @@
   </div>
 
   <!-- main-page.component.html -->
+  <div class="containerSlide">
+    <h1 class="tituloTem">Mapa</h1> 
   <div id="CarruselPisos">
-    <h2 id="tituloPlano">{{ titles[currentSlideIndex] }}</h2>
+    
+    <carousel [noWrap]="noWrapSlides">
+      <slide *ngFor="let slide of slides; let index=index">
+        <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+        <div class="carousel-caption">
+          <p id="aclaracion">{{slide.text}}</p>
 
-  <div class="container" (wheel)="handleMouseWheel($event)">
-    <carousel [activeSlide]="currentSlideIndex" [interval]="0" class="carousel">
-      <slide *ngFor="let image of images; let i = index">
-        <div class="carousel-image-container">
-          <img [src]="image" alt="Slide {{ i + 1 }}">
         </div>
       </slide>
+      
     </carousel>
-
-    <div class="top-controls">
-      <button (click)="prevSlide()" class="custom-carousel-control-prev" role="button"></button>
+    <br/>
+    <div>
     </div>
 
-    <div class="bottom-controls">
-      <button (click)="nextSlide()" class="custom-carousel-control-next" role="button"></button>
-    </div>
-  </div>
-
+    
+</div>
   </div>
 </div>
-      
     
     
 </body>

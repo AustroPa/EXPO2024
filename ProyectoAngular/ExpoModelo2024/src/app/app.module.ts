@@ -7,7 +7,12 @@ import { ExternalPageComponent } from './external-page/external-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImagePopupComponent } from './image-popup/image-popup.component';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CarouselModule } from 'ngx-bootstrap/carousel';  
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
@@ -35,7 +40,12 @@ const routes: Routes = [
     BrowserModule,
     ExternalPageComponent,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserModule
   ],
   exports: [RouterModule],
   providers: [],
