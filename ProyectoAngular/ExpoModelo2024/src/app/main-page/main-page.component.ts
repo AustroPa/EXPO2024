@@ -32,7 +32,7 @@
 
      onClickIrAExternalPage(id : any){
       this.idEnvio=id;
-      this.router.navigate(['/externalPage']);
+      this.router.navigate(['/external-page', id])
       }
   }
  

@@ -21,6 +21,9 @@ register();
 
 const routes: Routes = [
   { path: 'external-page', component: ExternalPageComponent },
+
+  { path: 'external-page/:id', component: ExternalPageComponent },
+  
   { path: 'main-page', component: MainPageComponent },
 ];
 

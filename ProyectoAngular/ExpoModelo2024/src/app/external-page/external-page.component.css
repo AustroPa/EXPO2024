@@ -98,7 +98,7 @@ a{
 #location-dot{
     position: absolute;
     font-size: 25px;
-    padding-left: 51px;
+    padding-left: 51px; /* no sabemos como cargar estos datos desde el json de cada aula (el 1 linea de abajo tambien)*/
     padding-top: 30px;
 }
 #clickeeAqui{
@@ -129,12 +129,12 @@ a{
     flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
-    padding: 1em;
+    padding: 0.5em;
     margin-bottom: 0;
 }
 li{
     width: fit-content;
-    padding: 1.5%;
+    padding: 0.8em;
 }
 .circuloLista{
     width: 3.8rem;
@@ -151,5 +151,6 @@ li{
     color: rgb(70, 70, 70);
     font-weight: bolder;
     font-size: small;
+    align-items: center;
 }
 

@@ -1,0 +1,27 @@
+ 
+     [
+        {
+            "images" : [
+                "https://img.freepik.com/vector-premium/linea-cuadrada-brillante_1189-1600.jpg",
+                "https://img.freepik.com/vector-premium/marco-cuadrado-rosa-claro-cuadrado-rosa-claro-bandera-cuadrada-luz-rosa_1189-2997.jpg",
+                "https://img.freepik.com/vector-gratis/galleta-cuadrada-estilo-dibujos-animados-aislado_1308-64646.jpg"
+            ],
+            "tituloTematica":"Fisica",
+            "subtituloTematica":"Aula 1",
+            "descripcionAula":"En el aula de física podemos encontrar numerosos proyectos que utilizan las leyes del mundo que nos rodea. Algunos proyectos pueden ser un pendulo de imanes que demustra la aplicacion de los campos magneticos, o un ventilador alimentado por energia renovable.",
+            "posicionCursorX":"", 
+            "posicionCursorY":""
+        },
+        {
+            "images" : [
+                "https://img.freepik.com/vector-premium/linea-cuadrada-brillante_1189-1600.jpg",
+                "https://img.freepik.com/vector-premium/marco-cuadrado-rosa-claro-cuadrado-rosa-claro-bandera-cuadrada-luz-rosa_1189-2997.jpg",
+                "https://img.freepik.com/vector-gratis/galleta-cuadrada-estilo-dibujos-animados-aislado_1308-64646.jpg"
+            ],
+            "tituloTematica":"Matematica",
+            "subtituloTematica":"Aula 2",
+            "descripcionAula":"En el aula de matematica podemos encontrar numerosos proyectos que utilizan las leyes del mundo que nos rodea. Algunos proyectos pueden ser un pendulo de imanes que demustra la aplicacion de los campos magneticos, o un ventilador alimentado por energia renovable.",
+            "posicionCursorX":"",
+            "posicionCursorY":""
+        }
+    ]

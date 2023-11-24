@@ -35,8 +35,8 @@
         </div>
         <div>
             <div id="titulo">
-                <h1>Nombre Tematica</h1>
-                <h2>Aula X</h2>
+                <h1>{{tituloTematica}}</h1>
+                <h2>{{subtituloTematica}}</h2>
             </div>
             <div id="carrusel" class="carrusel-gradient">
                 <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
@@ -47,7 +47,7 @@
             </div>
         </div>
           
-        <p id="descripcion">En el aula de física podemos encontrar numerosos proyectos que utilizan las leyes del mundo que nos rodea. Algunos proyectos pueden ser un pendulo de imanes que demustra la aplicacion de los campos magneticos, o un ventilador alimentado por energia renovable.</p>
+        <p id="descripcion">{{descripcionAula}}</p>
         
 
         <div class="container">
@@ -57,7 +57,7 @@
                     <img (click)="openImagePopup()" src="../../assets/plano-casa-bn.jpg">
                     <app-image-popup *ngIf="showImagePopup" (closePopupEvent)="closeImagePopup()"></app-image-popup>
                 </div>
-                <i id="location-dot" class="fa-solid fa-location-dot" style="color: #e01b24;"></i>
+                <i id="location-dot" class="fa-solid fa-location-dot" style="color: #e01b24; "></i>
             </div>
             <p id="clickeeAqui">click en el plano para ampliar...</p>
 
